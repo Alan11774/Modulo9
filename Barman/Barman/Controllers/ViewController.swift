@@ -36,30 +36,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func logout () {
             // TODO: confirmar si el usuario realmente quiere cerrar sesión
             // TODO: si es customLogin, hay que revisar en UserDefaults y eliminar la llave
-        UserDefaults.standard.set(false, forKey: "isLoggedIn")
-        UserDefaults.standard.removeObject(forKey: "loggedInUserEmail")
-        UserDefaults.standard.synchronize()
         
+        
+        let alert = UIAlertController(title: "Cerrar sesión", message: "¿Estás seguro de que desea cerrar sesión?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: {_ in
             
-        // si esta loggeado con AppleId
-        
-        
-        // si esta loggeado con Google
-        GIDSignIn.sharedInstance.signOut()
-        self.dismiss(animated: true)
+            UserDefaults.standard.set(false, forKey: "isLoggedIn")
+            UserDefaults.standard.removeObject(forKey: "loggedInUserEmail")
+            UserDefaults.standard.synchronize()
+            
+            
+                // si esta loggeado con AppleId
+            
+            
+                // si esta loggeado con Google
+            GIDSignIn.sharedInstance.signOut()
+            self.dismiss(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel))
+        present(alert,animated: true)
         }
-    
-    func handleLogout() {
-        
-        let userDefaults = UserDefaults.standard
-        if userDefaults.bool(forKey:"iusCustomLogin"){
-            userDefaults.removeObject(forKey: "customLoginUser")
-            userDefaults.set(false,forKey: "isCustomLogin")
-        }
-        GIDSignIn.sharedInstance.signOut()
-        self.dismiss(animated: true)
-        
-    }
     
     @objc func nuevoDrink() {
         let ad = UIApplication.shared.delegate as! AppDelegate
