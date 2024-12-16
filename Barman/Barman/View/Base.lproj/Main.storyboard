@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="3750.3816793893129" y="3.5211267605633805"/>
         </scene>
-        <!--Custom Login View Controller-->
+        <!--Login Interface-->
         <scene sceneID="8F1-Px-jdR">
             <objects>
-                <viewController id="Vsx-LQ-7i4" customClass="CustomLoginViewController" customModule="Barman" sceneMemberID="viewController">
+                <viewController id="Vsx-LQ-7i4" customClass="LoginInterface" customModule="Barman" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahr-fg-YfR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

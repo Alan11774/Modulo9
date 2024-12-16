@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CustomLoginDelegate: AnyObject {
-    func didPressSignIn(email: String, password: String)
+    func didPressSignIn()
 }
 class CustomLoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - UI Elements
@@ -180,7 +180,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
         }
 
         loginAction()
-        delegate?.didPressSignIn(email: email, password: password)
+        delegate?.didPressSignIn()
     }
     @objc func loginAction() {
         self.view.endEditing(true)
@@ -208,7 +208,8 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
                     }
                     if codigo == 200 {
                         // TODO: Implementar con UserDefaults la comprobación de sesión iniciada
-                        self.performSegue(withIdentifier: "loginOK", sender:nil)
+                        self.delegate?.didPressSignIn()
+//                        self.performSegue(withIdentifier: "loginOK", sender:self)
                     }
                     else {
                         Utils.showMessage(mensaje)

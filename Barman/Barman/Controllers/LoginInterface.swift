@@ -11,6 +11,28 @@ import AuthenticationServices
 import GoogleSignIn
 
 class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationControllerPresentationContextProviding {
+//    
+//    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+//        return self.view.window!
+//    }
+    func detectaEstado () { // revisa si el usuario ya inició sesión
+        // TODO: si es customLogin, hay que revisar en UserDefaults
+        
+        // si esta loggeado con AppleId
+        
+        
+        // si esta loggeado con Google
+        GIDSignIn.sharedInstance.restorePreviousSignIn { usuario, error in
+            guard let perfil = usuario else { return }
+            print ("usuario: \(perfil.profile?.name ?? ""), correo: \(perfil.profile?.email ?? "")")
+            self.performSegue(withIdentifier:"loginOK", sender:nil)
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        detectaEstado()
+    }
     // MARK: - Activity Indicator
     let actInd = UIActivityIndicatorView(style: .large)
 
@@ -41,10 +63,8 @@ class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationCont
     }
 
     // MARK: - Delegate Implementation
-    func didPressSignIn(email: String, password: String) {
-        print("Email: \(email), Password: \(password)")
-        // Aquí puedes implementar tu lógica de autenticación
-        Utils.showMessage("Attempting login with email: \(email)")
+    func didPressSignIn() {
+        changeSegue()
     }
 
     // MARK: - Apple ID Login
@@ -65,11 +85,15 @@ class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationCont
             } else {
                 guard let user = result?.user else { return }
                 print("Google User: \(user.profile?.name ?? ""), Email: \(user.profile?.email ?? "")")
+                self.changeSegue()
             }
         }
     }
 
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
+    }
+    func changeSegue(){
+        self.performSegue(withIdentifier: "loginOK", sender: nil)
     }
 }
