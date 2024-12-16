@@ -22,6 +22,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
     let signInButton = UIButton()
     let signUpLabel = UILabel()
     let signUpButton = UIButton()
+    let activityIndicator = UIActivityIndicatorView(style: .large)
 
     // MARK: - Delegate
     weak var delegate: CustomLoginDelegate?
@@ -123,6 +124,11 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
         signUpButton.setTitleColor(.systemBlue, for: .normal)
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(signUpButton)
+        
+        activityIndicator.color = .gray
+        activityIndicator.style = .medium
+        activityIndicator.center = view.center
+        view.addSubview(activityIndicator)
     }
 
     private func setupConstraints() {
@@ -199,6 +205,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
         delegate?.didPressSignIn()
     }
     @objc func loginAction() {
+        activityIndicator.startAnimating()
         self.view.endEditing(true)
         var message = ""
         guard let account = self.emailField.text,
@@ -220,6 +227,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
                           let mensaje = dict?["message"] as? String
                     else {
                         Utils.showMessage("Ocurrió un error. Reintente más tarde o contacte a servicio al cliente")
+                        self.activityIndicator.stopAnimating()
                         return
                     }
                     if codigo == 200 {
@@ -227,6 +235,8 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
                         UserDefaults.standard.set(true, forKey: "isLoggedIn")
                         UserDefaults.standard.set(account, forKey: "loggedInUserEmail") // Opcional: Guarda el email
                         UserDefaults.standard.synchronize()
+                        self.view.willRemoveSubview(self.signInButton)
+                        self.activityIndicator.stopAnimating()
                         self.delegate?.didPressSignIn()
                     }
                     else {
@@ -240,6 +250,7 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
             }
         }
         else {
+            self.activityIndicator.stopAnimating()
             Utils.showMessage(message)
         }
     }

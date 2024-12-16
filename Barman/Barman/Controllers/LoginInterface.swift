@@ -13,6 +13,7 @@ import GoogleSignIn
 class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationControllerPresentationContextProviding {
     func detectaEstado () { // revisa si el usuario ya inició sesión
         // TODO: si es customLogin, hay que revisar en UserDefaults
+        // Logeo general del usuario
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
         if isLoggedIn {
             print("Sesión iniciada con Custom Login")
@@ -56,7 +57,7 @@ class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationCont
         let appleIDBtn = ASAuthorizationAppleIDButton()
         self.view.addSubview(appleIDBtn)
         appleIDBtn.center = self.view.center
-        appleIDBtn.frame.origin.y = loginVC.view.frame.maxY + 10
+        appleIDBtn.frame.origin.y = loginVC.view.frame.maxY + 70
         appleIDBtn.addTarget(self, action: #selector(appleBtnTouch), for: .touchUpInside)
 
         // Botón para Google
