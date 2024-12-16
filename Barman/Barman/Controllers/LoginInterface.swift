@@ -11,12 +11,14 @@ import AuthenticationServices
 import GoogleSignIn
 
 class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationControllerPresentationContextProviding {
-//    
-//    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
-//        return self.view.window!
-//    }
     func detectaEstado () { // revisa si el usuario ya inició sesión
         // TODO: si es customLogin, hay que revisar en UserDefaults
+        let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+        if isLoggedIn {
+            print("Sesión iniciada con Custom Login")
+            self.performSegue(withIdentifier: "loginOK", sender: nil)
+            return
+        }
         
         // si esta loggeado con AppleId
         
@@ -25,6 +27,8 @@ class LoginInterface: UIViewController, CustomLoginDelegate, ASAuthorizationCont
         GIDSignIn.sharedInstance.restorePreviousSignIn { usuario, error in
             guard let perfil = usuario else { return }
             print ("usuario: \(perfil.profile?.name ?? ""), correo: \(perfil.profile?.email ?? "")")
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")
+            UserDefaults.standard.synchronize()
             self.performSegue(withIdentifier:"loginOK", sender:nil)
         }
     }

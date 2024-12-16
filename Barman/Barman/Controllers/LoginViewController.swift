@@ -28,12 +28,28 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        
-        setupViews()
-        setupConstraints()
+        let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+        if isLoggedIn {
+            delegate?.didPressSignIn()
+        }else{
+            self.view.backgroundColor = .white
+            setupViews()
+            setupConstraints()
+        }
     }
-
+//    private func checkUserSession() {
+//        let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+//        if isLoggedIn {
+//            // Redirigir al usuario a la pantalla principal
+//            goToHomeScreen()
+//        }
+//    }
+//
+//    private func goToHomeScreen() {
+//        let homeVC = HomeViewController()
+//        homeVC.modalPresentationStyle = .fullScreen
+//        self.present(homeVC, animated: true, completion: nil)
+//    }
     // MARK: - Setup Methods
     private func setupViews() {
         // Logo
@@ -208,8 +224,10 @@ class CustomLoginViewController: UIViewController, UITextFieldDelegate {
                     }
                     if codigo == 200 {
                         // TODO: Implementar con UserDefaults la comprobación de sesión iniciada
+                        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+                        UserDefaults.standard.set(account, forKey: "loggedInUserEmail") // Opcional: Guarda el email
+                        UserDefaults.standard.synchronize()
                         self.delegate?.didPressSignIn()
-//                        self.performSegue(withIdentifier: "loginOK", sender:self)
                     }
                     else {
                         Utils.showMessage(mensaje)

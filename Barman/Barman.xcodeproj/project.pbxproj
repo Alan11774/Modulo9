@@ -15,7 +15,6 @@
 		3D983AFD2D03D67600D4D6DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D983AFC2D03D67600D4D6DB /* MessageUI.framework */; };
 		3D983AFF2D03E55C00D4D6DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D983AFE2D03E55C00D4D6DB /* LoginViewController.swift */; };
 		3D983B012D03EC0400D4D6DB /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D983B002D03EC0400D4D6DB /* Services.swift */; };
-		648C0C982D0E5097004F8190 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C0C972D0E5097004F8190 /* AuthService.swift */; };
 		8FE0FAFD29AD4EF8004D7262 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0FAFC29AD4EF8004D7262 /* NetworkMonitor.swift */; };
 		8FE0FAFF29ADAB81004D7262 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE0FAFE29ADAB81004D7262 /* NetworkReachability.swift */; };
 		8FE3906E29AC405C0097A2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3906D29AC405C0097A2E5 /* AppDelegate.swift */; };
@@ -59,7 +58,6 @@
 		3D983AFC2D03D67600D4D6DB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		3D983AFE2D03E55C00D4D6DB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D983B002D03EC0400D4D6DB /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		648C0C972D0E5097004F8190 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8FE0FAFC29AD4EF8004D7262 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		8FE0FAFE29ADAB81004D7262 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		8FE3906A29AC405C0097A2E5 /* Barman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barman.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,7 +194,6 @@
 				8FE390A729AC7CCF0097A2E5 /* DetailViewController.swift */,
 				3D983B002D03EC0400D4D6DB /* Services.swift */,
 				3D912B572D04B27900AE5315 /* LoginInterface.swift */,
-				648C0C972D0E5097004F8190 /* AuthService.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -363,7 +360,6 @@
 				3D983B012D03EC0400D4D6DB /* Services.swift in Sources */,
 				8FE3906E29AC405C0097A2E5 /* AppDelegate.swift in Sources */,
 				3D912B582D04B27900AE5315 /* LoginInterface.swift in Sources */,
-				648C0C982D0E5097004F8190 /* AuthService.swift in Sources */,
 				8FE390A829AC7CCF0097A2E5 /* DetailViewController.swift in Sources */,
 				8FE0FAFF29ADAB81004D7262 /* NetworkReachability.swift in Sources */,
 				8FE390AA29AC7D680097A2E5 /* Constants.swift in Sources */,

@@ -36,13 +36,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func logout () {
             // TODO: confirmar si el usuario realmente quiere cerrar sesión
             // TODO: si es customLogin, hay que revisar en UserDefaults y eliminar la llave
+        UserDefaults.standard.set(false, forKey: "isLoggedIn")
+        UserDefaults.standard.removeObject(forKey: "loggedInUserEmail")
+        UserDefaults.standard.synchronize()
+        
             
-            // si esta loggeado con AppleId
-            
-            
-            // si esta loggeado con Google
-            GIDSignIn.sharedInstance.signOut()
-            self.dismiss(animated: true)
+        // si esta loggeado con AppleId
+        
+        
+        // si esta loggeado con Google
+        GIDSignIn.sharedInstance.signOut()
+        self.dismiss(animated: true)
         }
     
     func handleLogout() {

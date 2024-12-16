@@ -30,13 +30,13 @@
             filePath = "Barman/Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "signInAction()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cf69"
+                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cd78"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -46,11 +46,11 @@
                   urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177">
+                  startingLineNumber = "192"
+                  endingLineNumber = "192">
                </Location>
                <Location
-                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cf69"
+                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cd78"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -60,36 +60,8 @@
                   urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177">
-               </Location>
-               <Location
-                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cf88"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.signInAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176">
-               </Location>
-               <Location
-                  uuid = "1A8EA14C-92F0-4956-827B-9CEAC40A1B64 - 33fb3805c981cf88"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.signInAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "176"
-                  endingLineNumber = "176">
+                  startingLineNumber = "192"
+                  endingLineNumber = "192">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -104,40 +76,10 @@
             filePath = "Barman/Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "toggleCheckbox()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4886C85C-FDAA-4D6B-890D-10DBEC3066E4 - 56c8563a68957386"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.toggleCheckbox() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167">
-               </Location>
-               <Location
-                  uuid = "4886C85C-FDAA-4D6B-890D-10DBEC3066E4 - 56c8563a689573e7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.toggleCheckbox() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "166"
-                  endingLineNumber = "166">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -150,40 +92,10 @@
             filePath = "Barman/Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "signInAction()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7E111577-D824-4192-BFFE-985D7304FB96 - 33fb3805c981cc93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.signInAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "183"
-                  endingLineNumber = "183">
-               </Location>
-               <Location
-                  uuid = "7E111577-D824-4192-BFFE-985D7304FB96 - 33fb3805c981ccb2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Barman.CustomLoginViewController.signInAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "182"
-                  endingLineNumber = "182">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -196,8 +108,8 @@
             filePath = "Barman/Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "loginAction()"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,46 +118,48 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BAEEE6C5-C8D9-48F1-B5E4-DDCB987E2EEE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Barman/Controllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "loginAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AF1C8B8-3B66-4A09-96B5-28D4236390E4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Barman/Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "loginAction()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BAEEE6C5-C8D9-48F1-B5E4-DDCB987E2EEE - b8134da451462aa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; () in Barman.CustomLoginViewController.loginAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "210"
-                  endingLineNumber = "210">
-               </Location>
-               <Location
-                  uuid = "BAEEE6C5-C8D9-48F1-B5E4-DDCB987E2EEE - b8134da451462cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; () in Barman.CustomLoginViewController.loginAction() -&gt; ()"
-                  moduleName = "Barman.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alanulises/Library/CloudStorage/OneDrive-Personal/Documentos/Codes/Modulo9/Barman/Barman/Controllers/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "209"
-                  endingLineNumber = "209">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F1E3A48-662A-4880-83D8-7092ED093DA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Barman/Controllers/LoginInterface.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "detectaEstado()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
