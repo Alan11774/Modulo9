@@ -24,15 +24,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationItem.leftBarButtonItem = logoutBtn
     }
 
-//    @objc func logout () {
-//        
-//        let alert = UIAlertController(title: "Cerrar sesión", message: "¿Estás seguro de que desea cerrar sesión?", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: {_ in
-//            self.handleLogout()}))
-//        alert.addAction(UIAlertAction(title: "No", style: .cancel))
-//        present(alert,animated: true)
-//
-//    }
     @objc func logout () {
             // TODO: confirmar si el usuario realmente quiere cerrar sesión
             // TODO: si es customLogin, hay que revisar en UserDefaults y eliminar la llave
